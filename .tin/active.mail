@@ -1,0 +1,4 @@
+# [Mail/Save] active file. Format is like news active file:
+#   groupname  max.artnum  min.artnum  /dir
+# The 4th field is the basedir (ie. ~/Mail or ~/News)
+#

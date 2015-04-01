@@ -1,0 +1,41 @@
+{
+  "name": "mv",
+  "version": "2.0.3",
+  "description": "fs.rename but works across devices. same as the unix utility 'mv'",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/test.js --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/andrewrk/node-mv.git"
+  },
+  "keywords": [
+    "mv",
+    "move",
+    "rename",
+    "device",
+    "recursive",
+    "folder"
+  ],
+  "author": "Andrew Kelley",
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "devDependencies": {
+    "mocha": "~1.21.0"
+  },
+  "dependencies": {
+    "mkdirp": "~0.5.0",
+    "ncp": "~0.6.0",
+    "rimraf": "~2.2.8"
+  },
+  "bugs": {
+    "url": "https://github.com/andrewrk/node-mv/issues"
+  },
+  "homepage": "https://github.com/andrewrk/node-mv",
+  "directories": {
+    "test": "test"
+  }
+}

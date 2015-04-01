@@ -1,0 +1,55 @@
+{
+  "name": "describe-json",
+  "version": "0.0.6",
+  "author": "Itay Weinberger <itay@joo.la>",
+  "description": "Describes a JSON object metadata",
+  "engine": "node >= 0.10.x",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/itayw/describe-json.git"
+  },
+  "bugs": "https://github.com/itayw/describe-json/issues",
+  "contributors": [
+    {
+      "name": "Itay Weinberger",
+      "email": "itay@joo.la",
+      "url": "http://joo.la"
+    }
+  ],
+  "scripts": {
+    "test": "mocha --ui bdd test/unit",
+    "test-lint": "make test",
+    "coveralls": "make coveralls"
+  },
+  "dependencies": {
+    "traverse": "~0.6.6",
+    "kindof": "~1.0.0"
+  },
+  "devDependencies": {
+    "coveralls": "*",
+    "should": "*",
+    "mocha": "*",
+    "istanbul": "*",
+    "sinon": "*",
+    "chai": "*",
+    "sinon-chai": "*",
+    "expect": "*",
+    "underscore": "*",
+    "jshint": "*"
+  },
+  "main": "lib/describejson.js",
+  "keywords": [
+    "json",
+    "metadata"
+  ],
+  "license": "MIT",
+  "testling": {
+    "harness": "mocha-bdd",
+    "files": "test/unit/*.js",
+    "browsers": [
+      "ie/8..latest",
+      "chrome/latest",
+      "firefox/latest"
+    ]
+  }
+}

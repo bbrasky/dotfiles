@@ -1,0 +1,10 @@
+
+this is a debug log for diagnosing/reporting problems in bzr
+you can delete or truncate this file, or include sections in
+bug reports to https://bugs.launchpad.net/bzr/+filebug
+
+Tue 2015-03-10 11:09:21 -0400
+41.428  looking for plugins in /home/matt/.bazaar/plugins
+41.428  looking for plugins in bzrlib/plugins
+41.521  looking for plugins in /usr/lib/python2.7/dist-packages/bzrlib/plugins
+[ 9953] 2015-03-10 11:10:03.020 WARNING: bzr: warning: some compiled extensions could not be loaded; see <https://answers.launchpad.net/bzr/+faq/703>

@@ -1,0 +1,35 @@
+{
+  "name": "loggly",
+  "description": "A client implementation for Loggly cloud Logging-as-a-Service API",
+  "version": "1.0.5",
+  "author": "Nodejitsu Inc. <info@nodejitsu.com>",
+  "maintainers": [
+    "indexzero <charlie@nodejitsu.com>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/nodejitsu/node-loggly.git"
+  },
+  "keywords": [
+    "cloud computing",
+    "api",
+    "logging",
+    "loggly"
+  ],
+  "dependencies": {
+    "request": "2.27.x",
+    "timespan": "2.3.x",
+    "json-stringify-safe": "5.0.x"
+  },
+  "devDependencies": {
+    "vows": "0.7.x"
+  },
+  "main": "./lib/loggly",
+  "scripts": {
+    "test": "vows test/*-test.js --spec"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">= 0.8.0"
+  }
+}
