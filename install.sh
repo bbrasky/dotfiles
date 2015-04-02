@@ -4,6 +4,10 @@
 # * Based upon Greg's (GreyCat's) GPLd wiki example. *
 # --------------------------------------------------------
 # Create an array of all files in /etc and /bin directory
+
+DIALOG=`which dialog`
+if [ -z $DIALOG ]; then echo dialog not found.  dialog is required to run this script - try sudo apt-get install dialog for Ubuntu or Debian systems.; exit 1; fi
+
 DIRS=(./.*)
  
 # Destination directory
