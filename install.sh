@@ -1,5 +1,9 @@
 #!/bin/bash
-#Source Directories (Separated by spaces)
+# pcp.sh: A shell script to copy /bin/* and /etc/* files
+#         Display a progress bar while copying files.  
+# * Based upon Greg's (GreyCat's) GPLd wiki example. *
+# --------------------------------------------------------
+# Create an array of all files in /etc and /bin directory
 DIRS=(./.*)
  
 # Destination directory
@@ -13,7 +17,7 @@ DEST="../"
 # ---------------------------------
 # Redirect dialog commands input using substitution
 #
-dialog --title "Copy file" --gauge "Copying file..." 10 75 < <(
+dialog --title "Copy file" --backtitle "Matt's dotfiles installation script" --gauge "Copying file..." 10 75 < <(
    # Get total number of files in array
    n=${#DIRS[*]}; 
  
@@ -43,8 +47,8 @@ EOF
 )
  
 
-#Copy directories.  Doing this by hand for simplicity's sake
-dialog --infobox "Installing directories..." 3 34 
+
+dialog --backtitle "Matt's dotfiles installation script" --infobox "Installing directories..." 3 34  
 cp -R .oh-my-zsh ../
 cp -R .task ../
 cp -R .tin ../
